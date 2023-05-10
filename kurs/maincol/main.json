@@ -1,0 +1,52 @@
+{
+    "images": [
+        {
+            "id": 1,
+            "url": "./img/main/pic3.gif",
+            "caption": "Aliens #5693",
+            "price": "$120.41"
+        },
+        {
+            "id": 2,
+            "url": "./img/main/8.png",
+            "caption": "Mfer #1145",
+            "price": "$250"
+        },
+        {
+            "id": 3,
+            "url": "./img/main/pic7.gif",
+            "caption": "The Bored Ape #0012",
+            "price": "$111.84"
+        },
+        {
+            "id": 4,
+            "url": "./img/main/4.png",
+            "caption": "Tine dinos #8787",
+            "price": "$739.65"
+        },
+        {
+            "id": 5,
+            "url": "./img/main/2.png",
+            "caption": "Doodle #1720",
+            "price": "$375.34"
+        },
+        {
+            "id": 6,
+            "url": "./img/main/pic5.gif",
+            "caption": "Cowboys",
+            "price": "$690.68"
+        },
+        {
+            "id": 7,
+            "url": "./img/main/1.png",
+            "caption": "Sappy Seal #9320",
+            "price": "$105.55"
+        },
+        {
+            "id": 8,
+            "url": "./img/main/pic2.gif",
+            "caption": "Last Night",
+            "price": "$174.28"
+        }
+    ]
+}
