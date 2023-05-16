@@ -1,0 +1,134 @@
+
+.wrapper{
+    flex-grow: 1;
+}
+
+/* ============== 1 вариант SWIPER ============== */
+.swiper {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.swiper-wrapper {
+    box-sizing: content-box;
+}
+
+.swiper-slide{
+    display: flex;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Кнопки вперед и назад */
+.swiper-button-prev{
+    background-color: #bb8b5f30;
+    left: 20px;
+}
+
+.swiper-button-next{
+    background-color: #bb8b5f30;
+    right: 20px;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after{
+    color: #bb8c5f;
+    font-size: 30px;
+}
+
+/* Пагинация (точки) */
+/* .swiper-pagination{} */
+
+.swiper-pagination-bullet{
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    opacity: 1;
+    border-radius: 0;
+    border: 2px solid #bb8c5f;
+} 
+
+.swiper-pagination-bullet-active{
+    background-color: #bb8c5f;
+}
+
+
+/* ============== 2 вариант SWIPER ============== */
+.inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1180px;
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    position: relative;
+}
+
+.gallary {
+    display: flex;
+    max-width: 1180px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.gallary .swiper-wrapper {
+    box-sizing: content-box;
+}
+
+.foto-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.foto-slide img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    max-height: 380px;
+}
+
+.btn-next, .btn-prev{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    width: 40px;
+    height: 20px;
+    z-index: 10;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.btn-next {
+    right: -65px;
+}
+
+.btn-prev{
+    left: -25px;
+}
+
+@media (max-width: 1250px) {
+    .inner, .gallary {
+        max-width: 780px;
+    }
+}
+
+@media (max-width: 950px) {
+    .inner, .gallary {
+        max-width: 320px;
+    }
+}
