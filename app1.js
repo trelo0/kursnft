@@ -10,20 +10,23 @@ function getAllEvent() {
     submit.addEventListener('click', controlToInput2);
 }
 
-function controlToInput(e) {
-    if (e.key == 'Enter') {
-        if (password.value == '')
-            return
-        else
-            form.submit();
-    }
-}
 
 function controlToInput2() {
     if (password.value == '')
         return
     else
         form.submit();
+}
+
+function moveToNextInput(input, nextIndex) {
+    var maxLength = parseInt(input.getAttribute('maxlength'));
+    var inputValue = input.value;
+    
+    if (inputValue.length === maxLength) {
+        var nextInput = document.getElementsByName('form')[0].getElementsByTagName('input')[nextIndex];
+        nextInput.disabled = false;
+        nextInput.focus();
+    }
 }
 
 
