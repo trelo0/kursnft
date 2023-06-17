@@ -162,3 +162,32 @@ button:hover {
 .social i {
     margin-right: 4px;
 }
+
+.input-field {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.input-field input {
+    height: 45px;
+    width: 45px;
+    border-radius: 6px;
+    outline: none;
+    font-size: 25px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.input-field input:focus {
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button {
+    display: none;
+}
